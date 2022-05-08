@@ -9,12 +9,10 @@ public class Operators {
                 //   2  +        3          -  3 + 3 = 5
         System.out.println("result = " +result);
 
-
         int x = 10;
         int y = 22;
         double a = 10;
         double b = 22;
-
 
         // Relational Operators
         System.out.println( x > y );  // false
