@@ -2,17 +2,30 @@ public class Operators {
 
     public static void main(String[] args) {
 
-        // Operator Precedence
-        int z = 2;
-        int result = z++ + z++ * --z / z++ - --z + 3;
-                //   2  +  (3  *   3 / 3)   -  3 + 3
-                //   2  +        3          -  3 + 3 = 5
-        System.out.println("result = " +result);
-
         int x = 10;
         int y = 22;
         double a = 10;
         double b = 22;
+
+        // Arithmetic Operators
+        System.out.println(x + y);  // 32
+        System.out.println(x - y);  // -12
+        System.out.println(x * y);  // 220
+        System.out.println(y / x);  // 2
+        System.out.println(x / y);  // 0 -> Division of integers result to 0
+        System.out.println(y % x);  // 2  -> (10 x 2 = 20)  -> (22 - 20 = 2)
+        System.out.println(x % y);  // 10 -> (22 x 0 = 0)  -> (10 - 0 = 10)
+        System.out.println(a % b);  // 10.0
+
+        System.out.println("-----------------------");
+
+        //  Shorthand Operators
+        System.out.println( x+=y );  // x = x + y = 32
+        System.out.println( x*=y );  // x = x * y = 704
+        System.out.println( x%=y );  // x = x % y = 0
+        System.out.println( a%=b );  // a = a % b = 10.0
+
+        System.out.println("-----------------------");
 
         // Relational Operators
         System.out.println( x > y );  // false
@@ -31,24 +44,13 @@ public class Operators {
 
         System.out.println("-----------------------");
 
-        // Arithmetic Operators
-        System.out.println(x + y);  // 32
-        System.out.println(x - y);  // -12
-        System.out.println(x * y);  // 220
-        System.out.println(y / x);  // 2
-        System.out.println(x / y);  // 0 -> Division of integers result to 0
-        System.out.println(y % x);  // 2  -> (10 x 2 = 20)  -> (22 - 20 = 2)
-        System.out.println(x % y);  // 10 -> (20 x 0 = 0)  -> (10 - 0 = 10)
-        System.out.println(a % b);  // 10.0
+// Operator Precedence
+        int z = 2;
+        int result = z++ + z++ * --z / z++ - --z + 3;
+        //   2  +  (3  *   3 / 3)   -  3 + 3
+        //   2  +        3          -  3 + 3 = 5
+        System.out.println("result = " +result);
 
-        System.out.println("-----------------------");
-        //  Shorthand Operators
-        System.out.println( x+=y );  // x = x + y = 32
-        System.out.println( x*=y );  // x = x * y = 704
-        System.out.println( x%=y );  // x = x % y = 0
-        System.out.println( a%=b );  // a = a % b = 10.0
-
-        System.out.println("-----------------------");
 
 
 

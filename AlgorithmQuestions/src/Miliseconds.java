@@ -1,7 +1,7 @@
 public class Miliseconds {
     public static void main(String[] args) {
 
-        long milliseconds = 39504567;
+        long milliseconds = 366006456;
 
         int seconds = (int) (milliseconds / 1000) % 60 ;
 
