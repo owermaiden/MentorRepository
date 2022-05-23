@@ -7,12 +7,15 @@ public class LeapYear2 {
         int year = scan.nextInt();
         boolean isLeap;
 
-        if(year % 4 == 0){
+        if(year % 4 == 0){  // 2000
+
             if( year % 100 == 0){
+
                 isLeap = year % 400 == 0;
             } else {
                 isLeap = true;
             }
+
         } else {
             isLeap = false;
         }

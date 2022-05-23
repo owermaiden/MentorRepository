@@ -9,7 +9,7 @@ public class SwitchCase {
                 //break;
             case 'B':
                 System.out.println("Good");
-                //break;
+                break;
             case 'C':
                 System.out.println("Can be improved!");
                 //break;
