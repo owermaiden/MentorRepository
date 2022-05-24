@@ -24,8 +24,12 @@ public class FindNumber {
         }
         System.out.println("Congrats, you have found "+ realNumber+ " in "+ ++count + " try");
 
-
     }
+
+//    public static void findNumber(int realNumber){
+//
+//
+//    }
 
 
 }
