@@ -12,15 +12,14 @@ public class FindNumber {
         int count = 0;
 
         while (guess != realNumber){
-            if (guess < realNumber){
-                System.out.println("Your guess is lower than the real number, please try again");
-                guess = scan.nextInt();
-                count++;
-            } else if (guess > realNumber){
-                System.out.println("Your guess is higher than the real number, please try again");
-                guess = scan.nextInt();
-                count++;
+            if (guess > realNumber) {
+                System.err.println("Your estimation is greater than target number.");
+            } else {
+                System.err.println("Your estimation is less than target number.");
             }
+            System.out.println("Re-enter your estimation : ");
+            guess = scan.nextInt();
+            count++;
         }
         System.out.println("Congrats, you have found "+ realNumber+ " in "+ ++count + " try");
 

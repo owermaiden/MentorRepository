@@ -6,6 +6,10 @@ public class Loops {
             System.out.println(name.charAt(i));
         }
 
+        for (int i = 0, j = 9; i < name.length() - 2; i++, j--) {
+            System.out.println(name.charAt(j - 4));
+        }
+
         int x = 0;  // we need an external iterator...
         do {
             System.out.println(name.charAt(x++));

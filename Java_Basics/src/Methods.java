@@ -12,8 +12,8 @@ public class Methods {
         return a * b;
     }
 
-    public static double multiply(int a, double b){
-        return a * b;
+    public static int multiply(int a, double b){
+        return (int) (a * b);
     }
 
     public static double multiply(double a, double b){
@@ -24,7 +24,7 @@ public class Methods {
         System.out.println(multiply(5, 6));
         System.out.println(multiply(5.5, 6));
         System.out.println(multiply(5, 6.5));
-        System.out.println(multiply(5, 6.5));
+        System.out.println(multiply(6.5, 5.5));
        // System.out.println(multiply(5.5, 6.5));
        // System.out.println(multiply(5, 6, 7));
 

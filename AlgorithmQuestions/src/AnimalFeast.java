@@ -11,4 +11,10 @@ public class AnimalFeast {
         return (animal.charAt(0) +""+ animal.charAt(animal.length() - 1)).equals(dish.charAt(0)+""+dish.charAt(dish.length() - 1));
 
     }
+
+    public static boolean dishAnimal(String animal, String dish) {
+        return animal.charAt(0) == dish.charAt(0) && animal.charAt(animal.length() - 1) == dish.charAt(dish.length() - 1);
+    }
+
+
 }
