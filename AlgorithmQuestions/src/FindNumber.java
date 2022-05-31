@@ -21,7 +21,7 @@ public class FindNumber {
             guess = scan.nextInt();
             count++;
         }
-        System.out.println("Congrats, you have found "+ realNumber+ " in "+ ++count + " try");
+        System.out.println("Congrats, you have found "+ realNumber+ " in "+ count + " try");
 
     }
 
