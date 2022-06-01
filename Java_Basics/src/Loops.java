@@ -19,6 +19,38 @@ public class Loops {
         while (z < name.length()){
             System.out.println(name.charAt(z++));
         }
+
+        // linkedn example
+        for (int i=0; i<10; i=i++){
+            i+=1;
+            System.out.println("Hello World!");
+        }
+
+        // linkedin question...
+        String message = "Hello wold!";
+        String newMessage = message.substring(6, 11)
+                + message.substring(6);
+        System.out.println(newMessage);
+
+        int a = 1;
+        a = a++;
+        a = a + 1;
+        System.out.println(a);
+
+
+        // Nested for loops
+        String something = "Korshad";
+
+
+        for (int i = 0; i < something.length(); i++) {
+
+            for (int j = 0; j < something.length(); j++) {
+                System.out.println(i); // 3
+                System.out.println(j); // 2
+            }
+
+        }
+
     }
 
 

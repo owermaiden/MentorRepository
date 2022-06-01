@@ -1,8 +1,9 @@
+import java.util.Scanner;
+
 public class NonRepeatingVowel {
     public static void main(String[] args) {
         String word = "google";
         System.out.println(getFirstNonRepeatingVowel(word));
-
     }
 
     public static int getFirstNonRepeatingVowel(String input) {
@@ -18,6 +19,7 @@ public class NonRepeatingVowel {
                 if (foundVowelOccurrenceCount == 1) return i;
             }
         }
+
         return -1;
     }
 }
