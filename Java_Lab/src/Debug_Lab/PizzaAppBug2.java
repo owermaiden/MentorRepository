@@ -1,9 +1,13 @@
 package Debug_Lab;
 
 import java.util.Scanner;
-
-// Bug is in Line 69 -> Change return true -> false
-// Delete this comment before sharing with student...
+/*
+    - Bug is in Line 73 -> 'return false' is replaced with 'return true';
+    - BUG Description -> When user enters NEGATIVE credentials and tries to log in "Missing (.) dot in email OR @ comes after ."
+                      -> Programme doesnt validate EMAIL as expected
+                      -> For example mike@gmailcom is returns VALID, mike.gmail@com is also VALID by mistake...
+    - Delete this comment block before sharing with student...
+ */
 public class PizzaAppBug2 {
 
     public static void main(String[] args) {
