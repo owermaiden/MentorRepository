@@ -1,9 +1,11 @@
 package Debug_Lab;
 
 import java.util.Scanner;
-
-// Bug is in Line 43 -> Change continue to break;
-// Delete this comment before sharing with student...
+/*
+    - Bug is in Line 43 -> break is replaced with continue;
+    - BUG Description -> When user enters true credentials and logs in -> Programme continues to ask enter email again and again...
+    - Delete this comment block before sharing with student...
+ */
 public class PizzaAppBug1 {
 
     public static void main(String[] args) {
