@@ -16,8 +16,6 @@ public class RefactoredThiefFoxV3 {
         Fox fox4 = new Fox();
         fox4.setInfo(false,true,"GRAY",3);
 
-
-
         for (int i = 1; i <= 4; i++) {
 
             switch (i){
