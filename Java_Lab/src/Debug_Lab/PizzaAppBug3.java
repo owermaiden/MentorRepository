@@ -1,9 +1,13 @@
 package Debug_Lab;
 
 import java.util.Scanner;
-
-// Bug is in Line 80 -> Typo -> Change 'gail' to 'gmail'
-// Delete this comment before sharing with student...
+/*
+    - Bug is in Line 83 -> 'gmail' replaced with 'gail' -> TYPO
+    - BUG Description -> When user enters POSITIVE credentials and tries to log in,
+                      -> Programme doesn't validate EMAIL as expected because of TYPO in Line 83 -> gail instead of gmail...
+                      -> mike@gmailcom is true but gives error
+    - Delete this comment block before sharing with student...
+ */
 public class PizzaAppBug3 {
 
     public static void main(String[] args) {
@@ -73,7 +77,6 @@ public class PizzaAppBug3 {
     }
 
     public static boolean isEmailDomainValid(String givenEmail) {
-
 
         //Check if domain is valid  //gmail and hotmail domain - > mike@gmail.com
         String domain = givenEmail.substring(givenEmail.indexOf('@') + 1, givenEmail.indexOf('.'));
