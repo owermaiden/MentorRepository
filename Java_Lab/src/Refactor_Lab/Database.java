@@ -2,7 +2,7 @@ package Refactor_Lab;
 
 public class Database {
 
-    FoxConstructor[] databaseFoxes = {
+    FoxConstructor[] foxesInMemory = {
             new FoxConstructor(1,true,true, "BLACK",0),
             new FoxConstructor(2,true,true, "BLACK",2),
             new FoxConstructor(3,true,true, "BLACK",3),
@@ -10,10 +10,10 @@ public class Database {
     };
 
     public FoxConstructor[] getAllFoxes(){
-        return databaseFoxes;
+        return foxesInMemory;
     }
 
     public FoxConstructor getFoxById(int id){
-        return databaseFoxes[id - 1];
+        return foxesInMemory[id - 1];
     }
 }
