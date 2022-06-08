@@ -41,7 +41,6 @@ public class PizzaAppBug1 {
             if ((email.equals(givenEmail) && password.equals(givenPassword))) {
                 System.out.println("Successfully logged in with email");
                 continue;
-                //break;
 
             } else { //invalid checking
 

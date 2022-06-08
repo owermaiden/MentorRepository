@@ -16,6 +16,7 @@ public class HttpClientDemo {
                 .GET().uri(url.toURI()).build();
 
         var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println(response);
         return response.statusCode();
     }
 }

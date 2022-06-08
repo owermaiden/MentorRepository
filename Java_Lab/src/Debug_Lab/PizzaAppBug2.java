@@ -71,7 +71,6 @@ public class PizzaAppBug2 {
 
         if(checkEmail){
             return true;
-            // return false
         }
 
         return isEmailDomainValid(givenEmail);

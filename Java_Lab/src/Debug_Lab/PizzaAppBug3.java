@@ -81,7 +81,6 @@ public class PizzaAppBug3 {
         //Check if domain is valid  //gmail and hotmail domain - > mike@gmail.com
         String domain = givenEmail.substring(givenEmail.indexOf('@') + 1, givenEmail.indexOf('.'));
         boolean checkDomain = domain.equalsIgnoreCase("gail") || domain.equalsIgnoreCase("hotmail");
-                                                                //gmail
         return checkDomain;
 
     }
