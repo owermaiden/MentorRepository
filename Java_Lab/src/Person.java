@@ -6,7 +6,14 @@ public class Person {
         this.id = id;
         this.name = name;
         //PersonBuilder.buildPerson(id,name);
+    }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
 
@@ -20,7 +27,7 @@ class PersonBuilder {
         String name = "John";
         Person person = null;
         person = buildPerson(id, name);
-        //main(args);
+        System.out.println(person);
     }
 }
 
