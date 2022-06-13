@@ -33,9 +33,18 @@ public class ArraysDemo {
             System.out.println("sorted array printed here -> "+ nbr);
         }
 
+        System.out.println("Sorted numbers3 " + Arrays.toString(numbers3));
+
+        String[] names2 = {"Carol", "Bob", "Alice", "John", "Tim", "Kate", "Mary"};
+        Arrays.sort(names2);
+
+        System.out.println("Array sorted: " + Arrays.toString(names2));
+
+        int foundIndex = Arrays.binarySearch(names2, "Mary");
+        System.out.println("Mary found at: " + foundIndex);
+
         System.out.println("-----------------------------------------------");
 
-        System.out.println("Arrays.toString(numbers3) = " + Arrays.toString(numbers3));
 
         System.out.println("-----------------------------------------------");
 
