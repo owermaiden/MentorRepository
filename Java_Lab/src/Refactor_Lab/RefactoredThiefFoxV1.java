@@ -16,6 +16,7 @@ public class RefactoredThiefFoxV1 {
         Fox fox4 = new Fox();
         fox4.setInfo(false,true,"GRAY",3);
 
+
         if (isSuspect(fox1)) {
             System.out.println("\uD83E\uDD8A Fox1 is one of suspects! \uD83E\uDD14");
         }else {
@@ -42,8 +43,8 @@ public class RefactoredThiefFoxV1 {
 
     }
 
-    private static boolean isSuspect(Fox fox1) {
-        return fox1.isWearCoat && fox1.coatColor.equals("BLACK") && fox1.hasATorch && fox1.bagCount == 3;
+    private static boolean isSuspect(Fox fox) {
+        return fox.isWearCoat && fox.coatColor.equals("BLACK") && fox.hasATorch && fox.bagCount == 3;
     }
 }
 

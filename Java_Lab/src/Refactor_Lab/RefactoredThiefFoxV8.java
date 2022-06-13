@@ -5,9 +5,7 @@ public class RefactoredThiefFoxV8 {
     public static void main(String[] args) {
 
         Database foxDatabase = new Database();
-        for (FoxConstructor fox : foxDatabase.getAllFoxes()){
-            isSuspect(fox);
-        }
+        for (FoxConstructor fox : foxDatabase.getAllFoxes()) isSuspect(fox);
 
     }
 

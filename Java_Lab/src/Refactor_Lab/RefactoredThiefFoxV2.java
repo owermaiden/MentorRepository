@@ -27,8 +27,8 @@ public class RefactoredThiefFoxV2 {
 
     }
 
-    private static void printFoxStatus(Fox fox1, String s, String s2) {
-        if (isSuspect(fox1)) {
+    private static void printFoxStatus(Fox fox, String s, String s2) {
+        if (isSuspect(fox)) {
             System.out.println(s);
         } else {
             System.out.println(s2);

@@ -59,7 +59,7 @@ public class PizzaApp {
 
         //Check if the email address is valid:  //if @ . available, and @ is before . mikegmail.com
         int firstSignOfIndex = givenEmail.indexOf('@');  // -1
-        int secondSignOfIndex = givenEmail.indexOf('.');
+        int secondSignOfIndex = givenEmail.indexOf('.'); // -1
 
         boolean checkEmail = secondSignOfIndex < firstSignOfIndex || firstSignOfIndex < 0 || secondSignOfIndex < 0; //invalid
 
