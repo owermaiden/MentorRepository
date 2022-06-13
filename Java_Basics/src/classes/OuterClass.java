@@ -21,8 +21,7 @@ class OuterClass {
 
             // Try making 'message' a non-static
             // variable, there will be compiler error
-            System.out.println(
-                    "Message from nested static class: " + msg);
+            System.out.println("Message from nested static class: " + msg);
         }
     }
 
@@ -38,16 +37,14 @@ class OuterClass {
 
             // Print statement whenever this method is
             // called
-            System.out.println(
-                    "Message from non-static nested class: "
-                            + msg);
+            System.out.println("Message from non-static nested class: "+ msg);
         }
     }
 }
 
 // Class 2
 // Main class
-class GFG {
+class TheGoGetters {
 
     // Main driver method
     public static void main(String args[])

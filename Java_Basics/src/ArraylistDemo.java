@@ -35,8 +35,10 @@ public class ArraylistDemo {
 
         // homework
         numbers.removeIf(number -> number == 60);
+
+        // How to sort Arraylist...
         Collections.sort(numbers);
-        System.out.println(numbers);
+        System.out.println("sorted numbers "+numbers);
 
         // memory allocation
         numbers.ensureCapacity(100);
