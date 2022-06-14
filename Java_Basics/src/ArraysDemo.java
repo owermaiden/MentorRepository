@@ -70,23 +70,30 @@ public class ArraysDemo {
         // how to convert an Array to an Arraylist
 
         // Method-1
-        List<String> convertToArraylist = Arrays.asList(names);
-        System.out.println(convertToArraylist);
+        ArrayList<String> otherMethod = new ArrayList<>(Arrays.asList(names));
+        System.out.println("Method-1 "+otherMethod);
 
-        List<String> convertToArraylist2 = List.of(names);
-        System.out.println(convertToArraylist2);
+
 
         // Method 2
         List<String> list1 = new ArrayList<String>();
         Collections.addAll(list1, names);
-        System.out.println(list1);
+        System.out.println("Method-2 "+list1);
 
         // Method 3
         List<String> list2 = new ArrayList<String>();
         for(String text : names) {
             list2.add(text);
         }
-        System.out.println(list2);
+        System.out.println("Method-3 "+list2);
+
+        //Method 4
+        List<String> convertToArraylist = Arrays.asList(names);
+        System.out.println("Method-4 "+convertToArraylist);
+
+        //Method -5
+        List<String> convertToArraylist2 = List.of(names);
+        System.out.println("Method-5 "+convertToArraylist2);
 
         System.out.println("-----------------------------------------------");
 
