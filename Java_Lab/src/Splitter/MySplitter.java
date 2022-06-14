@@ -24,7 +24,7 @@ public class MySplitter {
         expenseList.add(new Expense(100, "taxi", userList.get(0)));
         expenseList.add(new Expense(200, "hotel", userList.get(1)));
         expenseList.add(new Expense(750, "fun", userList.get(2)));
-
+        expenseList.add(new Expense(750, "funny", userList.get(2)));
 
         while (true) {
 
@@ -43,13 +43,16 @@ public class MySplitter {
 
                     System.out.println("Which user you want to see expenses? Just type user id: ");
 
-                    //show all users: id:0 name: Ozzy
+                    //show all users: id:0 name: Ower
                     for(User user : userList){
                         System.out.println("id: " + userList.indexOf(user) + " name: " + user.name);
                     }
+
+                    // get input
                     int userId = scanner.nextInt();
                     User user = userList.get(userId);
 
+                    // Calculate all expenses made by this user
                     int expensesByUser = 0;
                     for(Expense expense : expenseList){
                         if (user.name.equals(expense.user.name)){
@@ -61,23 +64,13 @@ public class MySplitter {
                     break;
 
                 case 1: //total expenses
-
-                    for(int i = 0;i<expenseList.size();i++){
-                        System.out.println(i + " - expense amount:" + expenseList.get(i).amount + ", expense by:" + expenseList.get(i).user.name);
-                    }
+                    calculateTotalExpense(expenseList);
                     break;
 
-                case 2:
+                case 2: // split
 
-                    double totalAmount = 0;
                     ArrayList<Split> splitList = calculateSplitByUser(expenseList);
-
-                    for(Split split : splitList){
-
-                        totalAmount += split.amount;
-                    }
-
-                    makeSplit(totalAmount,splitList);
+                    makeSplit(calculateTotalExpense(expenseList), splitList);
                     break;
 
                 case 3:
@@ -87,19 +80,31 @@ public class MySplitter {
 
         }
 
-
     }
 
-    public static void makeSplit(double totalAmount, ArrayList<Split> splitList) {
+    public static int calculateTotalExpense(ArrayList<Expense> expenseList){
+        int totalExpense = 0;
+        for(int i = 0;i<expenseList.size();i++){
+            System.out.println(i + " - expense amount:" + expenseList.get(i).amount + ", expense by:" + expenseList.get(i).user.name);
+            totalExpense += expenseList.get(i).amount;
+        }
+        return totalExpense;
+    }
 
-        double amount = totalAmount /splitList.size();
+
+    public static void makeSplit(int totalExpenses, ArrayList<Split> splitList) {
+
+        double amount = totalExpenses /splitList.size();
 
         for(Split split : splitList){
 
             if(split.amount > amount){
+
                 System.out.println(split.user.name + " needs to take back " + (split.amount - amount));
+
             }else{
-                System.out.println(split.user.name + " need to give " + (-1 * (split.amount-amount)));
+
+                System.out.println(split.user.name + " need to give " + (-1 * (split.amount - amount)));
             }
 
         }
@@ -112,16 +117,12 @@ public class MySplitter {
 
         for(Expense expense : expenseList){
 
-            Split split = existSplitList(expense.user.name,splitList);
+            Split split = getSplitByUserIfExist(expense.user.name, splitList);
 
             if(split != null){
                 split.amount += expense.amount;
-
             }else{
-                Split willbeAdded = new Split();
-                willbeAdded.user = expense.user;
-                willbeAdded.amount = expense.amount;
-                splitList.add(willbeAdded);
+                splitList.add(new Split(expense.amount, expense.user));
             }
         }
 
@@ -129,7 +130,7 @@ public class MySplitter {
 
     }
 
-    public static Split existSplitList(String userName, ArrayList<Split> splitList) {
+    public static Split getSplitByUserIfExist(String userName, ArrayList<Split> splitList) {
 
         for(Split split : splitList){
             if(split.user.name.equals(userName)){

@@ -181,10 +181,7 @@ public class SplitterApp {
                     split.amount += expense.amount;
 
                 }else{
-                    Split willbeAdded = new Split();
-                    willbeAdded.user = expense.user;
-                    willbeAdded.amount = expense.amount;
-                    splitList.add(willbeAdded);
+                    splitList.add(new Split(expense.amount, expense.user));
                 }
             }
 
