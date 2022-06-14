@@ -94,17 +94,17 @@ public class MySplitter {
 
     public static void makeSplit(int totalExpenses, ArrayList<Split> splitList) {
 
-        double amount = totalExpenses /splitList.size();
+        double averageAmount = totalExpenses / splitList.size();
 
         for(Split split : splitList){
 
-            if(split.amount > amount){
+            if(split.amount > averageAmount){
 
-                System.out.println(split.user.name + " needs to take back " + (split.amount - amount));
+                System.out.println(split.user.name + " needs to take back " + (split.amount - averageAmount));
 
             }else{
 
-                System.out.println(split.user.name + " need to give " + (-1 * (split.amount - amount)));
+                System.out.println(split.user.name + " need to give " + (-1 * (split.amount - averageAmount)));
             }
 
         }
