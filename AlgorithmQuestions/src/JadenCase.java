@@ -9,16 +9,18 @@ public class JadenCase {
             return "";
         }
 
-        String result ="";
+        StringBuilder result = new StringBuilder();
         String [] words = givenSentence.split(" ");
 
         for (String str : words){
 
-            result += (str.charAt(0) + "") .toUpperCase() + str.substring(1) + " ";
+            result.append((str.charAt(0) + "").toUpperCase())
+                  .append(str.substring(1))
+                  .append(" ");
 
         }
 
-        return result.trim();
+        return result.toString().trim();
     }
 
 }

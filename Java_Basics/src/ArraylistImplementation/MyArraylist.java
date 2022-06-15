@@ -9,7 +9,7 @@ public class MyArraylist {
         items = new int[length];
     }
 
-    public void put(int item) {
+    public void add(int item) {
         resizeIfRequired();
         items[count++] = item;
     }
@@ -18,8 +18,9 @@ public class MyArraylist {
         if (items.length == count) {
             int[] newItems = new int[count * 2];
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++){
                 newItems[i] = items[i];
+            }
 
             items = newItems;
         }

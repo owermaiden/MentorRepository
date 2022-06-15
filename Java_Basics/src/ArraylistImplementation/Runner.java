@@ -6,12 +6,12 @@ public class Runner {
 
         MyArraylist list = new MyArraylist(5);
 
-        list.put(10);
-        list.put(20);
-        list.put(30);
-        list.put(40);
-        list.put(50);
-        list.put(60);
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+        list.add(60);
 
         list.print();
     }
