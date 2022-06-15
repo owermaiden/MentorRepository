@@ -9,15 +9,22 @@ public class FighterWinner {
     }
 
     public static String declareWinner(Fighter a, Fighter b, String firstAttacker) {
+
+        // I want to write my code always with 'a' is the attacker...
         if (firstAttacker.equals(b.name)) {
             a = b; // swap objects
             b = a;
         }
         while (true) {
+
             if ((b.health -= a.damagePerAttack) <= 0) {
+
                 return a.name + " wins";  // a wins
+
             } else if ((a.health -= b.damagePerAttack) <= 0) {
+
                 return b.name + " wins";  // b wins
+
             }
         }
     }
