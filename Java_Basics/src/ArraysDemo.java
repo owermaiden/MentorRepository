@@ -45,6 +45,14 @@ public class ArraysDemo {
 
         System.out.println("-----------------------------------------------");
 
+        // How to compare 2 arrays if they are equal?
+
+        int[] numbers4 = { 1, 2, 3 };
+        int[] numbers5 = { 4, 5, 6 };
+        System.out.println(Arrays.equals(numbers4, numbers5)); //false
+        int[] numbers6 = { 1, 2, 3 };
+        System.out.println(Arrays.equals(numbers4, numbers6)); //true
+
 
         System.out.println("-----------------------------------------------");
 
@@ -72,8 +80,6 @@ public class ArraysDemo {
         // Method-1
         ArrayList<String> otherMethod = new ArrayList<>(Arrays.asList(names));
         System.out.println("Method-1 "+otherMethod);
-
-
 
         // Method 2
         List<String> list1 = new ArrayList<String>();
