@@ -4,15 +4,20 @@ public class JadenCase {
         System.out.println(toJadenCase2("hi my name is ower"));
     }
 
-    public static String toJadenCase2(String phrase) {
-        if (phrase == null || phrase.isEmpty()) {
+    public static String toJadenCase2(String givenSentence) {
+        if (givenSentence == null || givenSentence.isEmpty()) {
             return "";
         }
+
         String result ="";
-        String [] strings = phrase.split(" ");
-        for (String str : strings){
+        String [] words = givenSentence.split(" ");
+
+        for (String str : words){
+
             result += (str.charAt(0) + "") .toUpperCase() + str.substring(1) + " ";
+
         }
+
         return result.trim();
     }
 
