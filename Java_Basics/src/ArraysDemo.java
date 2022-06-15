@@ -40,9 +40,6 @@ public class ArraysDemo {
 
         System.out.println("Array sorted: " + Arrays.toString(names2));
 
-        int foundIndex = Arrays.binarySearch(names2, "Mary");
-        System.out.println("Mary found at: " + foundIndex);
-
         System.out.println("-----------------------------------------------");
 
         // How to compare 2 arrays if they are equal?
@@ -77,29 +74,29 @@ public class ArraysDemo {
 
         // how to convert an Array to an Arraylist
 
-        // Method-1
-        ArrayList<String> otherMethod = new ArrayList<>(Arrays.asList(names));
-        System.out.println("Method-1 "+otherMethod);
+            // Method-1
+            ArrayList<String> otherMethod = new ArrayList<>(Arrays.asList(names));
+            System.out.println("Method-1 "+otherMethod);
 
-        // Method 2
-        List<String> list1 = new ArrayList<String>();
-        Collections.addAll(list1, names);
-        System.out.println("Method-2 "+list1);
+            // Method 2
+            List<String> list1 = new ArrayList<String>();
+            Collections.addAll(list1, names);
+            System.out.println("Method-2 "+list1);
 
-        // Method 3
-        List<String> list2 = new ArrayList<String>();
-        for(String text : names) {
-            list2.add(text);
-        }
-        System.out.println("Method-3 "+list2);
+            // Method 3
+            List<String> list2 = new ArrayList<String>();
+            for(String text : names) {
+                list2.add(text);
+            }
+            System.out.println("Method-3 "+list2);
 
-        //Method 4
-        List<String> convertToArraylist = Arrays.asList(names);
-        System.out.println("Method-4 "+convertToArraylist);
+            //Method 4
+            List<String> convertToArraylist = Arrays.asList(names);
+            System.out.println("Method-4 "+convertToArraylist);
 
-        //Method -5
-        List<String> convertToArraylist2 = List.of(names);
-        System.out.println("Method-5 "+convertToArraylist2);
+            //Method -5
+            List<String> convertToArraylist2 = List.of(names);
+            System.out.println("Method-5 "+convertToArraylist2);
 
         System.out.println("-----------------------------------------------");
 
@@ -109,6 +106,10 @@ public class ArraysDemo {
         var noItem = Arrays.binarySearch(numbers2, 12);
         System.out.println(result+ " is the index of searched item with binary search...");
         System.out.println(noItem+ " here binary search gives negative number because no matches found...");
+
+        //String[] names2 = {"Carol", "Bob", "Alice", "John", "Tim", "Kate", "Mary"};
+        int foundIndex = Arrays.binarySearch(names2, "Mary");
+        System.out.println("Mary found at: " + foundIndex);
 
 
 

@@ -14,7 +14,7 @@ public class ArraylistDemo {
         numbers.add(30);
         System.out.println(numbers);
 
-        System.out.println("numbers.get(20) = " + numbers.get(2));
+        System.out.println("numbers.get(2) = " + numbers.get(2));
 
         System.out.println("numbers.indexOf(20) = " + numbers.indexOf(20));
 
@@ -33,14 +33,12 @@ public class ArraylistDemo {
         Integer[] convertedNumbers = numbers.toArray(new Integer[3]);
         System.out.println(Arrays.toString(convertedNumbers));
 
-        // homework
-        numbers.removeIf(number -> number == 60);
-
         // How to sort Arraylist...
         Collections.sort(numbers);
         System.out.println("sorted numbers "+numbers);
 
-        // memory allocation
+        // homework
+        numbers.removeIf(number -> number == 60);
         numbers.ensureCapacity(100);
 
     }
