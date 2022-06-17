@@ -124,6 +124,9 @@ public class SplitterApp {
                         break;
                     case 3:
 
+                        // calculate price for each user
+                        // print result on the console
+
                         double totalAmount = 0;
                         ArrayList<Split> splitList = calculateSplitByUser(expenseList);
 

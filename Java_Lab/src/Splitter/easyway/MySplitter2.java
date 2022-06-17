@@ -62,7 +62,7 @@ public class MySplitter2 {
                     break;
 
                 case 2: // split
-                    makeSplit(calculateTotalExpenses(userList), userList);
+                    printResult(calculateTotalExpenses(userList), userList);
                     break;
 
                 case 3:
@@ -83,7 +83,7 @@ public class MySplitter2 {
     }
 
 
-    public static void makeSplit(int totalExpenses, ArrayList<User> userList) {
+    public static void printResult(int totalExpenses, ArrayList<User> userList) {
 
         double averageAmount = totalExpenses / userList.size();
 
