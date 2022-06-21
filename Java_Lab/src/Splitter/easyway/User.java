@@ -24,6 +24,8 @@ public class User {
             result += expense.amount;
         }
         return result;
+
+        // return expenses.stream().mapToInt(expense -> expense.amount).sum();
     }
 
 }

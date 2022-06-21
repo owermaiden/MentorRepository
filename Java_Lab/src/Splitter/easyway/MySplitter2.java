@@ -80,6 +80,8 @@ public class MySplitter2 {
             totalExpenses += usr.getTotalExpenseAmount();
         }
         return totalExpenses;
+
+        // return userList.stream().mapToInt(user -> user.expenses.stream().mapToInt(e -> e.amount).sum()).sum();
     }
 
 

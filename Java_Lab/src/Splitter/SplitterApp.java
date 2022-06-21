@@ -125,17 +125,17 @@ public class SplitterApp {
                     case 3:
 
                         // calculate price for each user
-                        // print result on the console
 
-                        double totalAmount = 0;
+                        double totalExpensesMadeByAllUsers = 0;
                         ArrayList<Split> splitList = calculateSplitByUser(expenseList);
 
                         for(Split split : splitList){
 
-                            totalAmount += split.amount;
+                            totalExpensesMadeByAllUsers += split.amount;
                         }
 
-                        makeSplit(totalAmount,splitList);
+                        // print result on the console
+                        makeSplit(totalExpensesMadeByAllUsers,splitList);
 
 
 
@@ -154,18 +154,14 @@ public class SplitterApp {
 
         public static void makeSplit(double totalAmount, ArrayList<Split> splitList) {
 
-            double amount = totalAmount /splitList.size();
-
-
-            //total 300
-            //each person : 100
+            double avarageAmount = totalAmount / splitList.size();
 
             for(Split split : splitList){
 
-                if(split.amount > amount){
-                    System.out.println(split.user.name + " needs to take back " + (split.amount - amount));
+                if(split.amount > avarageAmount){
+                    System.out.println(split.user.name + " needs to take back " + (split.amount - avarageAmount));
                 }else{
-                    System.out.println(split.user.name + " need to give " + (-1 * (split.amount-amount)));
+                    System.out.println(split.user.name + " need to give " + (-1 * (split.amount-avarageAmount)));
                 }
 
             }
@@ -178,7 +174,7 @@ public class SplitterApp {
 
             for(Expense expense : expenseList){
 
-                Split split = existSplitList(expense.user,splitList);
+                Split split = hasUserSplitBefore(expense.user,splitList);
 
                 if(split != null){
                     split.amount += expense.amount;
@@ -192,7 +188,7 @@ public class SplitterApp {
 
         }
 
-        public static Split existSplitList(User user, ArrayList<Split> splitList) {
+        public static Split hasUserSplitBefore(User user, ArrayList<Split> splitList) {
 
             for(Split split : splitList){
                 if(split.user.name.equals(user.name)){
