@@ -20,6 +20,7 @@ public class Car {
             models.add("Honda");
         }
         models.add("Jaguar");
+        models.add("Crysler");
     }
 
     public Car(String name, String engine) {
@@ -45,7 +46,13 @@ public class Car {
             - Static methods can't access instance variables and instance methods directly. They need some object reference to do so.
      */
 
-
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", engine='" + engine + '\'' +
+                '}';
+    }
 }
 
 
