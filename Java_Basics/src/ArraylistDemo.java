@@ -37,6 +37,14 @@ public class ArraylistDemo {
         Collections.sort(numbers);
         System.out.println("sorted numbers "+numbers);
 
+        // Frequency
+        List<Integer> freqNumbers = new ArrayList<>(Arrays.asList(10,20,20,30,40,40));
+        for(Integer each : freqNumbers){
+            if( Collections.frequency(freqNumbers, each) == 1){
+                System.out.println("each = " + each);
+            }
+        }
+
         // homework
         numbers.removeIf(number -> number == 60);
         numbers.ensureCapacity(100);

@@ -56,6 +56,7 @@ public class DateTimeDemo {
         boolean notBefore = LocalDate.parse("2016-06-12").isBefore(LocalDate.parse("2016-06-11"));
         boolean isbefore = LocalTime.parse("06:30").isBefore(LocalTime.parse("07:30"));
         boolean isAfter = LocalDate.parse("2016-06-12").isAfter(LocalDate.parse("2016-06-11"));
+        System.out.println("isAfter = " + isAfter);
 
         LocalDateTime beginningOfDay = LocalDate.parse("2016-06-12").atStartOfDay();
         System.out.println("beginningOfDay = " + beginningOfDay);
