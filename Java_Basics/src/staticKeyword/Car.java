@@ -2,13 +2,14 @@ package staticKeyword;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Car {
     private String name;
     private String engine;
 
-    // static fields
+    // static fields - shared
     public static int numberOfCars;
     public static List<String> models = new ArrayList<>();
 
@@ -16,6 +17,8 @@ public class Car {
     static {
 
         // maybe we need a logic to instantiate static variables other than decleration...
+        // DB
+        // server -> confirm...
         if (models.size() > 2){
             models.add("Honda");
         }

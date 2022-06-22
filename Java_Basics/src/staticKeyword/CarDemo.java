@@ -8,6 +8,7 @@ public class CarDemo {
 
         System.out.println("honda = " + honda);
 
+
         // Static features Car Class has...
         System.out.println("Car.numberOfCars = " + Car.numberOfCars);
         System.out.println("Car.models = " + Car.models);

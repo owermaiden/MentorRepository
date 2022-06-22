@@ -33,6 +33,9 @@ public class Palindrome {
             if (str.charAt(i) != str.charAt(j)){
                 return false;
             }
+
+            //     c a r a c
+            //       |   |
         }
         return true;
     }

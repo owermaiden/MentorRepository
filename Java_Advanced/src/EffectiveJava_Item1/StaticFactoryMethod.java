@@ -17,6 +17,7 @@ public class StaticFactoryMethod {
     User user3 = new User("Ower", "ower@gmail.com", "USA");
         System.out.println("user3 = " + user3);
 
+    User user4 = new User("adil","adil@gmailcom");
 
     User ower = User.createWithDefaultCountry("ower", "ower@gmail.com");
     User hasan = User.createWithDefaultCountry("hasan", "hasan@gmail.com");
