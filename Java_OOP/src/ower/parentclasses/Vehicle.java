@@ -11,7 +11,7 @@ public class Vehicle {
     }
 
     public void changeGear(){
-        System.out.println("Parent change gear method");
+        System.out.print("Parent change gear method owerriden by ");
     }
 
 

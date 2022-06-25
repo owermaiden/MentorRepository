@@ -4,16 +4,18 @@ import ower.parentclasses.Vehicle;
 
 public class Car extends Vehicle {
 
-    String type;
+    private String type;
+    private int gear;
 
     public Car(String type, String model, int year) {
         super(model, year);
         this.type = type;
     }
 
+    @Override
     public void changeGear(){
         super.changeGear();
-        System.out.println("Child change gear method");
+        System.out.println("Car change gear method");
     }
 
 

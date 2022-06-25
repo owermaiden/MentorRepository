@@ -17,5 +17,11 @@ public class Runner {
         System.out.println(car);
         System.out.println(bike);
         System.out.println(trunk);
+
+        car.changeGear();
+        bike.changeGear();
+        trunk.changeGear();
+
+
     }
 }
