@@ -2,12 +2,12 @@ package demo.package1;
 
 public class Class1 {
 
-    public int x;
-    protected int y;
-    int z;
-    private int u;
+    public int publicField;
+    protected int protectedField;
+    int defaultField;
+    private int privateField;
 
-    protected void m(){
+    protected void protectedMethod(){
 
     }
 }

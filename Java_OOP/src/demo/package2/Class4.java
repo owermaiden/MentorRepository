@@ -1,20 +1,22 @@
 package demo.package2;
 
-public class Class4 {
+import demo.package1.Class1;
 
-    public static void main(String[] args) {
+public class Class4 extends Class1 {
+
+//    public static void main(String[] args) {
 //        Class4 class4 = new Class4();
-//        System.out.println(class4.x);
-//        System.out.println(class4.y);
-//        System.out.println(class4.z);
-//        System.out.println(class4.u);
-//        class4.m();
+//        System.out.println(class4.publicField);
+//        System.out.println(class4.protectedField);
+//        System.out.println(class4.defaultField);
+//        System.out.println(class4.privateField);
+//        class4.protectedMethod();
 //
 //        Class1 class1 = new Class1();
-//        System.out.println(class1.x);
-//        System.out.println(class1.y);
-//        System.out.println(class1.z);
-//        System.out.println(class1.u);
-//        class1.m();
-    }
+//        System.out.println(class1.publicField);
+//        System.out.println(class1.protectedField);
+//        System.out.println(class1.defaultField);
+//        System.out.println(class1.privateField);
+//        class1.protectedMethod();
+//    }
 }
