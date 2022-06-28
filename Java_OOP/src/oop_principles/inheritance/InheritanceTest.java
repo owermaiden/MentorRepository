@@ -5,5 +5,7 @@ public class InheritanceTest {
 
         MountainBike mb = new MountainBike(3, 100, 25);
         System.out.println(mb.toString());
+        System.out.println("MountainBike.numberOfBicycles = " + MountainBike.numberOfBicycles);
+        System.out.println("Bicycle.numberOfBicycles = " + Bicycle.numberOfBicycles);
     }
 }
