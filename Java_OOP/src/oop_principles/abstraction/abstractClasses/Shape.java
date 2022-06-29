@@ -1,4 +1,4 @@
-package oop_principles.abstraction;
+package oop_principles.abstraction.abstractClasses;
 
 public abstract class Shape {
     String color;

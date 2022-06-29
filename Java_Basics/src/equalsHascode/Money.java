@@ -36,7 +36,6 @@ public class Money {
         }
 
         // instanceof Check and actual value check
-
         return (o instanceof Money) && ((Money) o).getValue() == this.value && Objects.equals(((Money) o).getCurrency(), this.currency);
     }
 

@@ -1,4 +1,4 @@
-package oop_principles.abstraction;
+package oop_principles.abstraction.abstractClasses;
 
 public class AbstractionTest {
     public static void main(String[] args)
