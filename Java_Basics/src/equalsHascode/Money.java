@@ -1,15 +1,24 @@
 package equalsHascode;
 
-public class Number {
+import java.util.Objects;
 
+public class Money {
+
+    private String currency;
     private int value;
 
-    public Number(int value) {
+
+    public Money(String currency, int value) {
+        this.currency = currency;
         this.value = value;
     }
 
     public int getValue() {
         return value;
+    }
+
+    public String getCurrency() {
+        return currency;
     }
 
     // The method does override or implement a method declared in a supertype.
@@ -27,7 +36,7 @@ public class Number {
         }
 
         // instanceof Check and actual value check
-        if ((o instanceof Number) && (((Number) o).getValue() == this.value)) {
+        if ((o instanceof Money) && (((Money) o).getValue() == this.value) && ((Money) o).getCurrency() == this.currency) {
             return true;
         } else {
             return false;
@@ -36,8 +45,6 @@ public class Number {
 
     @Override
     public int hashCode() {
-        int result = 0;
-        result = (int) (value / 11);
-        return result;
+        return Objects.hash(currency, value);
     }
 }

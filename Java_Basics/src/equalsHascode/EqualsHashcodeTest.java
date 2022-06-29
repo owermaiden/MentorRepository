@@ -5,16 +5,16 @@ public class EqualsHashcodeTest {
     public static void main(String[] args) {
 
         EqualsHashcodeTest cruequalsHashcodeTestTest = new EqualsHashcodeTest();
-        Number one = new Number(1);
-        Number two = new Number(1);
+        Money one = new Money("USD", 55);
+        Money two = new Money("USD", 55);
         cruequalsHashcodeTestTest.test1(one, two);
 
-        Number three = new Number(1);
-        Number four = new Number(2);
+        Money three = new Money("USD", 55);
+        Money four = new Money("EURO", 55);
         cruequalsHashcodeTestTest.test2(three, four);
     }
 
-    public void test1(Number one, Number two) {
+    public void test1(Money one, Money two) {
         if (one.equals(two)) {
             System.out.println("Test1: One and Two are equal");
         } else {
@@ -22,7 +22,7 @@ public class EqualsHashcodeTest {
         }
     }
 
-    public void test2(Number three, Number four) {
+    public void test2(Money three, Money four) {
         if (three.equals(four)) {
             System.out.println("Test2: Three and Four are equal");
         } else {
