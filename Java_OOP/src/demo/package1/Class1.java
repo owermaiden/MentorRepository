@@ -10,4 +10,5 @@ public class Class1 {
     protected void protectedMethod(){
 
     }
+
 }

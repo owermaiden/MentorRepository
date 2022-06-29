@@ -21,6 +21,7 @@ public class Money {
         return currency;
     }
 
+
     // The method does override or implement a method declared in a supertype.
     @Override
     public boolean equals(Object o) {

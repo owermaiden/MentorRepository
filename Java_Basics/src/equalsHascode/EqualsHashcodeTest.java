@@ -4,14 +4,14 @@ public class EqualsHashcodeTest {
 
     public static void main(String[] args) {
 
-        EqualsHashcodeTest cruequalsHashcodeTestTest = new EqualsHashcodeTest();
+        EqualsHashcodeTest equalsHashcodeTest = new EqualsHashcodeTest();
         Money one = new Money("USD", 55);
         Money two = new Money("USD", 55);
-        cruequalsHashcodeTestTest.test1(one, two);
+        equalsHashcodeTest.test1(one, two);
 
         Money three = new Money("USD", 55);
         Money four = new Money("EURO", 55);
-        cruequalsHashcodeTestTest.test2(three, four);
+        equalsHashcodeTest.test2(three, four);
     }
 
     public void test1(Money one, Money two) {
