@@ -1,7 +1,8 @@
 package oop_principles.abstraction.abstractClasses;
 
 public abstract class Shape {
-    String color;
+
+    private String color;
 
     // these are abstract methods
     abstract double area();

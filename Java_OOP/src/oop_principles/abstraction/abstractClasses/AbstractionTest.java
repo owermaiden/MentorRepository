@@ -1,8 +1,8 @@
 package oop_principles.abstraction.abstractClasses;
 
 public class AbstractionTest {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
+
         Shape s1 = new Circle("Red", 2.2);
         Shape s2 = new Rectangle("Yellow", 2, 4);
 
