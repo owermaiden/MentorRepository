@@ -9,7 +9,7 @@ public class Circle implements Shape{
 
     @Override
     public double calculateArea() {
-        return pi * radius * radius;
+        return Shape.getPi() * radius * radius;
     }
 
     @Override
