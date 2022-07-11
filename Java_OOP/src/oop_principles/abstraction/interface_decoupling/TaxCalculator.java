@@ -1,4 +1,4 @@
-package oop_principles.polymorphism.demo;
+package oop_principles.abstraction.interface_decoupling;
 
 public class TaxCalculator {
     private double income;
