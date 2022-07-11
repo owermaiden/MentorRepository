@@ -6,10 +6,11 @@ circles, etc., and that he wants to market them by filtering according to the sq
 
 Tips:
 
-- Define a "House" interface to calculate the area and subclasses to calculate the area of each shape.
-- Create all houses with the information given below and put them in an Arraylist...
-- Write a method that will take all the name and features of real estate agent's properties as separate lists and return a property name list
-  whose areas are equal or more than the request of a client.
+Define a "House" interface to calculate the area and subclasses to calculate the area of each shape.
+Define an Absract Class for common functionalities of houses, like «house name»…
+Create all houses with the information given below and put them in an Arraylist...
+Write a method that will take all houses as parameter and return a property name list whose areas are equal or more than the request of a client.
+
 
 Example:
 input :
