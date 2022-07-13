@@ -3,7 +3,7 @@ package oop_principles.abstraction.interface_decoupling.solution;
 public class Runner {
     public static void main(String[] args) {
 
-        // Poor mans dependency injection -> SPRING
+        // Poor men`s dependency injection -> SPRING
 
         TaxCalculator taxCalculator2018 = new TaxCalculator2018(100_000);
 
