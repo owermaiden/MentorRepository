@@ -9,7 +9,7 @@ public class MySplitter2 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String[] optionList = { "List Specific Person Expense",
+        String[] optionList = { "List Specific Splitter.Person Expense",
                                 "List All Expenses",
                                 "Make Split",
                                 "Close the budget"};

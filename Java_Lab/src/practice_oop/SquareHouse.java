@@ -1,6 +1,6 @@
 package practice_oop;
 
-class SquareHouse extends AbstractHouse implements House {
+class SquareHouse extends AbstractHouse {
     int side;
 
     public SquareHouse(int side, String name) {
@@ -9,12 +9,9 @@ class SquareHouse extends AbstractHouse implements House {
     }
 
     @Override
-    public double getArea() {
+    public double area() {
         return side*side;
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
+
 }

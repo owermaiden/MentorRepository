@@ -10,4 +10,6 @@ public abstract class AbstractHouse {
     String getName() {
         return this.name;
     }
+
+    abstract double area();
 }

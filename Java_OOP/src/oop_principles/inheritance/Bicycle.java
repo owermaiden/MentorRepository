@@ -1,6 +1,6 @@
 package oop_principles.inheritance;
 
-public class Bicycle {
+public class Bicycle{
     // the Bicycle class has two fields
     public int gear;
     public int speed;
@@ -35,4 +35,6 @@ public class Bicycle {
     public static void increaseNumberOfBicycles(){
         numberOfBicycles++;
     }
+
+
 }

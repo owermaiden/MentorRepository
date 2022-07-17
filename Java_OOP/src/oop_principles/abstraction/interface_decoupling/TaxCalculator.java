@@ -10,6 +10,7 @@ public class TaxCalculator {
 
     // If you change how we calculate tax... we need to recompile the whole programme
     public double calculateTax(){
-        return income * 0.4;
+        return income * 0.5;
     }
+
 }

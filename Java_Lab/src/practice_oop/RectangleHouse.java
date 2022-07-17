@@ -1,8 +1,8 @@
 package practice_oop;
 
-class RectangleHouse extends AbstractHouse implements House {
+class RectangleHouse extends AbstractHouse {
 
-    int width, length;
+    private int width, length;
 
     public RectangleHouse(int width, int length, String name) {
         super(name);
@@ -11,12 +11,15 @@ class RectangleHouse extends AbstractHouse implements House {
     }
 
     @Override
-    public double getArea() {
+    public double area() {
         return width*length;
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
+    public int getWidth() {
+        return width;
+    }
+
+    public int getLength() {
+        return length;
     }
 }

@@ -91,7 +91,7 @@ public class SplitterApp {
                         }
 
 
-                        ///List Specific Person Expense
+                        ///List Specific Splitter.Person Expense
                         //0 - expense amount : 100, expense by :0zzy
                         //1 - expense amount : 100, expense by :0zzy
                         //ozzy spent $ 200
@@ -232,14 +232,14 @@ public class SplitterApp {
                 /*
         Creating options
         1 : Make Expense
-        2 : List Specific Person Expense
+        2 : List Specific Splitter.Person Expense
         3 : List All Expenses
         4 : Make Split
         5 : List All Users
         6 : Close the budget
         */
 
-            String[] optionList = {"Make Expense","List Specific Person Expense","List All Expenses","Make Split","List All Users","Close the budget"};
+            String[] optionList = {"Make Expense","List Specific Splitter.Person Expense","List All Expenses","Make Split","List All Users","Close the budget"};
 
             return optionList;
 

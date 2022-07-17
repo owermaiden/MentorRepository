@@ -9,7 +9,7 @@ class ShapeTest {
 //        System.out.println("square : " + isAreaEnough(new Square(20), 300));
 //        System.out.println("circle : " + isAreaEnough(new Circle(20), 300));
 
-        ArrayList<House> houses = new ArrayList<>(Arrays.asList(
+        ArrayList<AbstractHouse> houses = new ArrayList<>(Arrays.asList(
 
                 new SquareHouse(20, "Square-1"),
                 new SquareHouse(25, "Square-2"),
@@ -25,19 +25,19 @@ class ShapeTest {
         System.out.println(filterProperties(houses, 600));
     }
 
-    public static ArrayList<String > filterProperties (ArrayList<House> houses, int minArea){
+    public static ArrayList<String > filterProperties (ArrayList<AbstractHouse> houses, int minArea){
 
-        ArrayList<String > result = new ArrayList<>();
-        for (House house : houses){
+        ArrayList<String> result = new ArrayList<>();
+        for (AbstractHouse house : houses){
             if (isAreaEnough(house, minArea)){
-                result.add(house.getName());
+                result.add(house.name);
             }
         }
         return result;
     }
 
-    public static boolean isAreaEnough(House shape, int minArea){
-        //System.out.println(shape.getArea());
-        return shape.getArea() >= minArea;
+    public static boolean isAreaEnough(AbstractHouse house, int minArea){
+        //System.out.println(house.getArea());
+        return house.area() >= minArea;
     }
 }

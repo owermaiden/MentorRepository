@@ -1,3 +1,5 @@
+package Splitter;
+
 public class Person {
     int id;
     String name;
@@ -5,12 +7,12 @@ public class Person {
     public Person(int id, String name) {
         this.id = id;
         this.name = name;
-        //PersonBuilder.buildPerson(id,name);
+        //Splitter.PersonBuilder.buildPerson(id,name);
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Splitter.Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

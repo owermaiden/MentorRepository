@@ -5,7 +5,7 @@ public class TaxReport {
     TaxCalculator calculator;
 
     public TaxReport() {
-        calculator = new TaxCalculator(600.0);
+        calculator = new TaxCalculator(600_000);
     }
 
     void show(){

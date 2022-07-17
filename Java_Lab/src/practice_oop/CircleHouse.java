@@ -1,6 +1,7 @@
 package practice_oop;
 
-class CircleHouse extends AbstractHouse implements House {
+class CircleHouse extends AbstractHouse {
+
     int radius;
 
     public CircleHouse(int radius, String name) {
@@ -9,12 +10,9 @@ class CircleHouse extends AbstractHouse implements House {
     }
 
     @Override
-    public double getArea() {
+    public double area() {
         return Math.PI * radius * radius;
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
+
 }

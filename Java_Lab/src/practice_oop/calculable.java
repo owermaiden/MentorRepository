@@ -36,10 +36,10 @@ output :
 */
 
 
-public interface House {
-    double getArea();
-    String getName();
-}
+//public interface calculable {
+//    double area();
+//    String name();
+//}
 
 
 

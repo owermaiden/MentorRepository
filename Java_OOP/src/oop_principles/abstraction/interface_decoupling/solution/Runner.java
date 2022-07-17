@@ -5,10 +5,11 @@ public class Runner {
 
         // Poor men`s dependency injection -> SPRING
 
-        TaxCalculator taxCalculator2018 = new TaxCalculator2018(100_000);
+        TaxCalculator taxCalculator2018 = new TaxCalculator2018(600_000, 300_000);
 
         TaxReport taxReportFor2018 = new TaxReport(taxCalculator2018);
 
         taxReportFor2018.show();
+
     }
 }
