@@ -10,6 +10,7 @@ public class TwoSum {
     }
 
     public static int[] twoSum(int[] nums, int target) {
+        // O(n^2)
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[j] == target - nums[i]) {
@@ -24,12 +25,19 @@ public class TwoSum {
         int first = 0, last = arr.length - 1;
         Arrays.sort(arr);  // nlog(n)
 
+//        { 2 , 3 , 4 , 6 , 8 , 9 }
+//          ^                   ^
         while (first < last) {  //n
+
             if (arr[first] + arr[last] == target){
-                return new int[]{arr[first], arr[last]};
-            } else if (arr[first] + arr[last] < target) first++;
-            else
+
+                return new int[]{ arr[first] , arr[last] };
+
+            } else if ( arr[first] + arr[last] < target ){
+                first++;
+            } else {
                 last--;
+            }
         }
         return new int[0];
     }
